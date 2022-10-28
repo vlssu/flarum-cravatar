@@ -1,0 +1,17 @@
+name: JavaScript
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: flarum/action-build@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          build_script: build
