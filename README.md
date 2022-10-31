@@ -7,7 +7,7 @@
 A [Flarum](http://flarum.org) extension. Add [cravatar](https://cravatar.cn/) avatars to your forum.  
 Modified from [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar).
 
-### Features
+### 产品特点 / Features
 
 - Save on disk space by using Cravatar avatars stored remotely
 - Option to keep or replace existing avatars already uploaded to your forum
@@ -16,12 +16,12 @@ Modified from [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar).
 - Support for restricting Cravatars to their content rating
 - Proxy fetching cravatar images via the forum
 
-##### TO-DO
+##### 待办事项 / TO-DO
 
 - Allow users to switch between cravatar and forum uploaded avatar, with admin option to enable/disable
 - Add support for Cravatar profile fields
 
-### Installation
+### 安装 / Installation
 
 Install with composer:
 
@@ -29,7 +29,7 @@ Install with composer:
 composer require vlssu/flarum-cravatar:"*"
 ```
 
-### Updating
+### 更新 / Updating
 
 ```sh
 composer update vlssu/flarum-cravatar:"*"
@@ -37,7 +37,7 @@ php flarum migrate
 php flarum cache:clear
 ```
 
-### Links
+### 链接 / Links
 
 - [Packagist](https://packagist.org/packages/vlssu/flarum-cravatar)
 - [GitHub](https://github.com/vlssu/flarum-cravatar)
