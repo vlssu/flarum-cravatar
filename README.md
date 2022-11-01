@@ -41,3 +41,4 @@ php flarum cache:clear
 
 - [Packagist](https://packagist.org/packages/vlssu/flarum-cravatar)
 - [GitHub](https://github.com/vlssu/flarum-cravatar)
+- [Discuss](https://discuss.flarum.org/d/31885)

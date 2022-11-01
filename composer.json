@@ -8,7 +8,8 @@
   "license": "MIT",
   "support": {
     "issues": "https://github.com/vlssu/flarum-cravatar/issues",
-    "source": "https://github.com/vlssu/flarum-cravatar"
+    "source": "https://github.com/vlssu/flarum-cravatar",
+    "forum": "https://discuss.flarum.org/d/31885"
   },
   "require": {
     "php": "^7.4 || ^8.0",
@@ -37,7 +38,10 @@
         "backgroundSize": "80%",
         "backgroundRepeat": "no-repeat",
         "backgroundPosition": "center"
-    }
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/31885"
     }
   }
 }
