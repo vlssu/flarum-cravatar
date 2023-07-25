@@ -1,35 +1,38 @@
+- **简体中文**
+- [English](./README-en.md)
+
 # Cravatar
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/vlssu/flarum-cravatar.svg)](https://packagist.org/packages/vlssu/flarum-cravatar) 
 
 ![Extiverse](https://extiverse.com/extension/vlssu/flarum-cravatar/open-graph-image)
 
-A [Flarum](http://flarum.org) extension. Add [cravatar](https://cravatar.cn/) avatars to your forum.  
-Modified from [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar).
+[Flarum](http://flarum.org) 扩展。将 [cravatar](https://cravatar.cn/) 头像添加到您的论坛。  
+修改自 [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar)。
 
-### 产品特点 / Features
+### 特点
 
-- Save on disk space by using Cravatar avatars stored remotely
-- Option to keep or replace existing avatars already uploaded to your forum
-- Supports multiple Cravatar default sets
-- Option to override a user-set Cravatar with one from the chosen default set
-- Support for restricting Cravatars to their content rating
-- Proxy fetching cravatar images via the forum
+- 通过使用 Cravatar 提供的头像来源从而节省磁盘空间
+- 可以选择保留或替换已上传到论坛的现有头像
+- 支持 Cravatar 的多个默认头像
+- 使用所选默认设置中的一个来覆盖用户设置的头像的选项
+- 支持 Cavatar 的内容评级
+- 可通过论坛代理来获取 Cavatar 的头像图片
 
-##### 待办事项 / TO-DO
+##### 待办
 
-- Allow users to switch between cravatar and forum uploaded avatar, with admin option to enable/disable
-- Add support for Cravatar profile fields
+- 允许用户在 Cavatar 和在论坛上传的头像之间切换，并可在管理页面启用/禁用
+- 添加对 Cravatar 个人资料字段的支持
 
-### 安装 / Installation
+### 安装
 
-Install with composer:
+使用 composer 安装:
 
 ```sh
 composer require vlssu/flarum-cravatar:"*"
 ```
 
-### 更新 / Updating
+### 更新
 
 ```sh
 composer update vlssu/flarum-cravatar:"*"
@@ -37,7 +40,7 @@ php flarum migrate
 php flarum cache:clear
 ```
 
-### 链接 / Links
+### 链接
 
 - [Packagist](https://packagist.org/packages/vlssu/flarum-cravatar)
 - [GitHub](https://github.com/vlssu/flarum-cravatar)
