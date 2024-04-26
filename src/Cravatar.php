@@ -129,7 +129,7 @@ class Cravatar
     }
 
     /**
-     * @return array|null
+     * @return array
      */
     private function sizeParameter(): array
     {
@@ -145,7 +145,7 @@ class Cravatar
     }
 
     /**
-     * @return array|null
+     * @return array
      */
     private function ratingParameter(): array
     {

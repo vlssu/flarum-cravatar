@@ -2,7 +2,9 @@
   "name": "vlssu/flarum-cravatar",
   "description": "Add cravatar avatars to your forum",
   "keywords": [
-    "flarum", "cravatar", "avatar"
+    "flarum",
+    "cravatar",
+    "avatar"
   ],
   "type": "flarum-extension",
   "license": "MIT",
@@ -12,7 +14,6 @@
     "forum": "https://discuss.flarum.org/d/31885"
   },
   "require": {
-    "php": "^7.4 || ^8.0",
     "flarum/core": "^1.2.0",
     "guzzlehttp/guzzle": "^7.0"
   },
@@ -42,6 +43,21 @@
     },
     "flagrow": {
       "discuss": "https://discuss.flarum.org/d/31885"
+    },
+    "flarum-cli": {
+      "modules": {
+        "githubActions": true
+      }
     }
+  },
+  "require-dev": {
+    "flarum/phpstan": "*"
+  },
+  "scripts": {
+    "analyse:phpstan": "phpstan analyse",
+    "clear-cache:phpstan": "phpstan clear-result-cache"
+  },
+  "scripts-descriptions": {
+    "analyse:phpstan": "Run static analysis"
   }
 }
