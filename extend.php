@@ -25,7 +25,6 @@ return [
         ->css(__DIR__.'/resources/less/admin.less'),
 
     (new Extend\Routes('api'))
-        ->remove('users.avatar.upload')
         ->get(
             '/users/{id}/cravatar.jpg',
             'vlssu.cravatar.image',

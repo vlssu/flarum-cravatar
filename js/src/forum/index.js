@@ -8,7 +8,6 @@ app.initializers.add('vlssu/flarum-cravatar', () => {
 
   extend(AvatarEditor.prototype, 'controlItems', function (items) {
     const user = this.attrs.user;
-    // items.remove('upload');
 
     if (user.cravatar()) {
       items.remove('remove');
