@@ -7,6 +7,9 @@ vlssu-flarum-cravatar:
       replace-flarum-custom:
         title: '替换上传到论坛的自定义头像'
         helptext: '用 Cravatar 替换已上传到论坛的自定义头像'
+      allow-user-toggle:
+        title: '允许用户在 Cravatar 与上传头像间切换'
+        helptext: '开启后，用户可在 Cravatar 头像与上传到论坛的头像之间自行切换。'
       defaults:
         title: 默认
         helptext: '如果用户的邮箱地址没有匹配的 Cravatar 头像时会发生什么？Cravatar 有几种默认头像类型可选，无匹配头像时，通过邮箱地址的哈希值来生成独一无二的头像。'
@@ -29,3 +32,5 @@ vlssu-flarum-cravatar:
   forum:
     settings:
       edit-cravatar: '前往 cravatar.cn 管理头像'
+      use-cravatar: '使用 Cravatar 头像'
+      use-uploaded: '使用已上传的头像'

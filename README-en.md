@@ -14,6 +14,7 @@ Modified from [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar).
 
 - Save on disk space by using Cravatar avatars stored remotely
 - Option to keep or replace existing avatars already uploaded to your forum
+- (Optional) Let users switch between their Cravatar image and the avatar uploaded to the forum
 - Supports multiple Cravatar default sets
 - Option to override a user-set Cravatar with one from the chosen default set
 - Support for restricting Cravatars to their content rating
@@ -21,7 +22,6 @@ Modified from [ianm/gravatar](https://discuss.flarum.org/d/27930-gravatar).
 
 ##### TO-DO
 
-- Allow users to switch between cravatar and forum uploaded avatar, with admin option to enable/disable
 - Add support for Cravatar profile fields
 
 ### Installation

@@ -44,5 +44,7 @@ return [
         ->default('vlssu-cravatar.rating', 'g')
         ->default('vlssu-cravatar.proxy', false)
         ->default('vlssu-cravatar.force-default', false)
-        ->default('vlssu-cravatar.replace-flarum-custom', false),
+        ->default('vlssu-cravatar.replace-flarum-custom', false)
+        ->default('vlssu-cravatar.allow-user-toggle', false)
+        ->serializeToForum('vlssu-cravatar.allow-user-toggle', 'vlssu-cravatar.allow-user-toggle'),
 ];

@@ -18,6 +18,12 @@ app.initializers.add('vlssu/flarum-cravatar', () => {
       help: app.translator.trans('vlssu-flarum-cravatar.admin.settings.replace-flarum-custom.helptext'),
     })
     .registerSetting({
+      label: app.translator.trans('vlssu-flarum-cravatar.admin.settings.allow-user-toggle.title'),
+      setting: 'vlssu-cravatar.allow-user-toggle',
+      type: 'bool',
+      help: app.translator.trans('vlssu-flarum-cravatar.admin.settings.allow-user-toggle.helptext'),
+    })
+    .registerSetting({
       label: app.translator.trans('vlssu-flarum-cravatar.admin.settings.defaults.title'),
       setting: 'vlssu-cravatar.default',
       type: 'select',

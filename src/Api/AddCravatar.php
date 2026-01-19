@@ -30,9 +30,19 @@ class AddCravatar
 
     public function __invoke(BasicUserSerializer $serializer, User $user, array $attributes)
     {
-        if (empty($attributes['avatarUrl']) || (bool) $this->settings->get('vlssu-cravatar.replace-flarum-custom')) {
+        $allowUserToggle = (bool) $this->settings->get('vlssu-cravatar.allow-user-toggle');
+        $replaceFlarumCustom = (bool) $this->settings->get('vlssu-cravatar.replace-flarum-custom');
+
+        // When user toggling is allowed, prefer the user's choice; otherwise fall back to the legacy behavior.
+        $useCravatar = $allowUserToggle
+            ? (bool) $user->getPreference('vlssu-cravatar.use', true)
+            : (empty($attributes['avatarUrl']) || $replaceFlarumCustom);
+
+        if ($useCravatar) {
             $attributes['avatarUrl'] = $this->cravatar->getForUser($user->id);
             $attributes['cravatar'] = true;
+        } else {
+            $attributes['cravatar'] = false;
         }
 
         return $attributes;
